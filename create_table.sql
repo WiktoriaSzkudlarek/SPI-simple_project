@@ -1,0 +1,8 @@
+CREATE TABLE kamyki(
+id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+imie VARCHAR(80) NOT NULL,
+kolor VARCHAR(10) NOT NULL,
+wielkosc VARCHAR(15) NOT NULL,
+data_znalezienia DATE NOT NULL,
+opis VARCHAR(180)
+);

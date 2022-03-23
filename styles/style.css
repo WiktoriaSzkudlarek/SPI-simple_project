@@ -1,0 +1,185 @@
+html, body, footer {
+    margin: 0;
+}
+
+main {
+    margin: 0 0 .3rem 0;
+    background-color: rgb(79, 90, 100);
+}
+
+footer {
+    text-align: center;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 4em;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr 1fr .25fr;
+    background: rgb(71, 71, 75);
+    box-shadow:0 0 .2em .2em rgb(71, 71, 75);
+}
+
+nav a {
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin: 0 .3rem 0 0 ;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+	color: white;
+    background: rgb(34, 34, 36);
+    font-size: larger;
+	cursor: pointer;
+}
+
+nav a:last-child {
+    margin: 0;
+}
+
+nav a:hover {
+    background: rgba(34, 34, 36, 0.5);
+    transition: background .25s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+article {
+    padding: .2rem;
+    background:rgb(206, 204, 204);
+    display: grid;
+    box-shadow:0 0 .2em .2em rgb(71, 71, 75);
+}
+#art-lista {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#art-dodaj {
+    font-size: xx-large;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#dod1{
+    grid-column-start: 2;
+}
+#dod3 {
+    height: auto;
+    background: #619f54;
+}
+.edytuj {
+    background: rgb(97, 159, 84);
+}
+.edytuj:hover {
+	cursor: pointer;
+    background: rgb(56, 190, 29);
+}
+.usun {
+    background: rgb(163, 70, 70);
+}
+.usun:hover {
+	cursor: pointer;
+    background: rgb(218, 47, 47);
+}
+
+label, input, select, form {
+    margin: .3rem;
+}
+
+textarea {
+    max-width: max-content;
+}
+
+form {
+    padding-bottom: 3rem;
+}
+
+.rock {
+    margin: .5rem;
+    padding: 0;
+    position: relative;
+    font-size: smaller;
+    background: rgb(84, 159, 147);
+    box-shadow:0 0 .2em .2em rgb(71, 71, 75);
+    word-wrap: break-word;
+}
+
+.rock button {
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    right:  0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+.rock p {
+    padding: 0 .3rem;
+}
+
+.rock span {
+    padding: 0 .2rem;
+    width: 100%;
+    font-size: xx-small;
+}
+
+.rock span:hover {
+	cursor: pointer;
+    user-select: all;
+}
+
+.rock img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rock-image {  
+    background: #fafad2;
+    color: #000;
+}
+.rock-image img { 
+    content:url("../img/wygl.png");
+}
+#art-lista .interest {
+    color: #000;
+}
+
+.rock-desc {
+    margin-top: 2em;
+    margin-bottom: 2rem;
+    color: rgb(32, 32, 32);
+    word-break: break-all;
+}
+
+#opis{
+    margin: 0;
+    padding: 1rem;
+    color: snow;;
+    text-align: center;
+}
+
+@media screen and (max-width: 62rem) {
+    #art-lista {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #art-dodaj {
+        grid-template-columns: 1fr 1fr;
+        font-size: medium;
+    }
+    #dod1{
+        grid-column-start: 1;
+    }
+    #opis {
+        text-align: left
+    }
+  }
+  
+@media screen and (max-width: 37.5rem) {
+    #art-lista {
+        grid-template-columns: 1fr 1fr;
+    }
+    #art-dodaj {
+        grid-template-columns: 1fr;
+    }
+  }
